@@ -92,11 +92,7 @@ void CleanAllocs()
 
 #if defined(RATIONAL) || defined(INTEGRAL)
 
-#ifdef GMP2
 #define GMP_LIMB mp_limb_t
-#else
-#define GMP_LIMB mp_limb
-#endif
 
 
 /* This all works on the assumption that an mp_limb is at least
