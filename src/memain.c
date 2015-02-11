@@ -486,6 +486,7 @@ static retcode runquot()
 }
 
 
+FILE *yyin;
 int main(argc,argv)		       
      int argc;
      char ** argv;
@@ -494,6 +495,7 @@ int main(argc,argv)
 /*   clock(); */
 /*  mallopt(M_MXFAST,256);
   mallopt(M_GRAIN,16); */
+  yyin = stdin;
 #if defined(RATIONAL) || defined(INTEGRAL)
   mp_set_memory_functions(alloc_for_gmp,realloc_for_gmp,free_for_gmp);
 #endif

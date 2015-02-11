@@ -24,7 +24,7 @@
 #endif
 
 static char *PassChars=".-+*;,()[]^~<>:{}=/";
-FILE *yyin = stdin;
+// FILE *yyin = stdin;
 
 int input_line= -1;
 int input_char=0;
