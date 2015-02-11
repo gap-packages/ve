@@ -715,7 +715,6 @@ void DelSent(v,s)
   Fclear(s->fac);
   if (s-BodyS(v) < --Wt(v))
     memmove((pointer)(s),(pointer)(s+1),(Wt(v) - (s-BodyS(v)))*sizeof(_sent));
- //   memcpy((pointer)(s),(pointer)(s+1),(Wt(v) - (s-BodyS(v)))*sizeof(_sent));
   else
     if (s > BodyS(v))
       Len(v) = 1+(s-1)->loc;
