@@ -99,8 +99,8 @@ void outbin(f,x)
      FILE *f;
      fldelt x;
 {
-  mpz_out_raw(f,&(x.num));
-  mpz_out_raw(f,&(x.den));
+     mpz_out_raw(f,mpq_numref(&x));
+     mpz_out_raw(f,mpq_denref(&x));
 }
 
 #endif

@@ -106,8 +106,8 @@ extern fldelt FOne;
 #define Finit(f) mpq_init(&(f))
 #define Fclear(f) mpq_clear(&(f))
 #define Fcopy(f,r) mpq_set(&(r),&(f))
-#define IsZero(f) ((f).num.size == 0)	     
-#define IsOne(f) ((f).num.d[0] == 1 && (f).den.d[0] == 1 && (f).num.size == 1 && (f).den.size == 1)
+#define IsZero(f) (mpq_sgn(&(f)) == 0)
+#define IsOne(f) (mpq_cmp_si(&(f),1,1) == 0)
 
 /* extern bool IsOneFunc PT((fldelt *)); */
 #endif

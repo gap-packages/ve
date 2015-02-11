@@ -57,7 +57,7 @@ fldelt readfelt(f,b)
     c = getc(f);
   } while (isspace(c));
   ungetc(c,f);
-  mpz_inp_str(&(q.num),f,10);
+  mpz_inp_str(mpq_numref(&q),f,10);
   do {
     c = getc(f);
   } while (isspace(c));
@@ -69,7 +69,7 @@ fldelt readfelt(f,b)
       break;
       
     case '/':
-      mpz_inp_str(&(q.den),f,10);
+      mpz_inp_str(mpq_denref(&q),f,10);
       break;
     }
   *b = true;
