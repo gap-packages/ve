@@ -256,7 +256,7 @@ The @code{zme} program is completely new in this version.
 @item 
 The @code{quot} quotient-constructing program has been merged with
 @code{me} and corresponding functionality added to @code{qme} and
-@code{zme}. @xref{Input File Options} and @ref{Input for Quotient Construction}.
+@code{zme}. @xref{Input File Options}, and @ref{Input for Quotient Construction}.
 
 @item
 A number of internal changes have improved performance for most
@@ -270,7 +270,7 @@ greatly enhanced @pxref{Logging and Error Message Options}.
 @item
 Three new output formats have been added: one for output to be read into
 AXIOM and two formats intended to be simply and quickly read by
-special-purpose programs. @xref{Output Formats} and @ref{Output Options}.
+special-purpose programs. @xref{Output Formats}, and @ref{Output Options}.
 
 @item
 A special option has been added to indicate that all the generators
@@ -283,7 +283,7 @@ All the programs have been combined into a single set of sources.
 
 @item 
 A number of new options have been added to control execution and limit
-the module dimension and the run time. @xref{Limit Options}
+the module dimension and the run time. @xref{Limit Options}.
 
 @item
 A new option has been added to override the characteristic given in the
@@ -781,7 +781,7 @@ Any relator or relation in either part of the relations section may be
 followed by a weight specification. This takes the form @samp{<w>} or
 @samp{<w1,w2>} and affects the order in which the relations are used by
 the program, higher weights meaning that the relation will be used less
-or later. See @xref{Strategy} for details of how the weights are applied.
+or later. See @xref{Strategy}, for details of how the weights are applied.
 
 In the first form @samp{w} should be a positive integer and will be the
 weight used for that relation in both define and lookahead modes. In the
@@ -1236,7 +1236,7 @@ hundred sets of images have been read in.
 @item w
 Controls logging of Weight changes. The default level is 1.  At any
 level greater than zero it logs every change of weight
-(@xref{Strategy}).
+(@xref{Strategy}.)
 
 @end table
 
@@ -1566,7 +1566,7 @@ input suitable for reading into the Meataxe programs of R.A. Parker.
 
 In this output format the action of each generator, and the images if
 @code{-i} was given, is written to separate file. The generator name is
-appended to the file name stem. @xref{Output Options} for more details.
+appended to the file name stem. @xref{Output Options}, for more details.
 
 Each matrix is ready to be read in by the meataxe program @code{cv}.
 
