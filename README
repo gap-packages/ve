@@ -1,7 +1,8 @@
 Welcome to version 3 of my vector enumeration software!
 
-This software is made available freely for non-commercial use. For
-other purposes please contact sl25@cus.cam.ac.uk.
+This software is distributed under the terms of the
+GNU General Public License, either version 2 of the License, or
+(at your option) any later version.
 
 THERE IS NO WARRANTY WHATSOEVER
 
@@ -53,5 +54,5 @@ You should then have three programs bin/me, bin/qme and bin/zme
 ready for use.
 
 
-   
+Stephen Linton  <sl4@st-andrews.ac.uk>
 
