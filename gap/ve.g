@@ -2,19 +2,9 @@
 ##
 #A  ve.g                    GAP Share Library                    Steve Linton
 ##
-#A  @(#)$Id: ve.g,v 1.1.1.1 1996/12/11 12:39:41 werner Exp $
-##
 #Y  Copyright 1994-1995,  Lehrstuhl D fuer Mathematik,  RWTH Aachen,  Germany
 ##
 ##  This file contains the interface between {\GAP} and {\VE}.
-##
-#H  $Log: ve.g,v $
-#H  Revision 1.1.1.1  1996/12/11 12:39:41  werner
-#H  Preparing 3.4.4 for release
-#H
-#H  Revision 3.0  1994/03/24  17:14:35  sam
-#H  Initial Revision under RCS
-#H
 ##
 
 #############################################################################
