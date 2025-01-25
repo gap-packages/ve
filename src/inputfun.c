@@ -3,6 +3,7 @@
 /* C routines to support the input parser */
 #include "input.h"
 #include <string.h>
+extern int yyparse(void);
 
 gpgen nextgen=0;		/* next free gen. number */
 gpgen truegens;

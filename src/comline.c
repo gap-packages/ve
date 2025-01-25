@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include <unistd.h>
 #include "me.h"
 
 extern FILE *yyin;		/* can change file read by flex */

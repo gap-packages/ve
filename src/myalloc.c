@@ -100,7 +100,7 @@ pointer  myallocf(n,b,file,line)
       else
 	{
 	  fprintf(stderr,"Myalloc failure - heap full\n");
-	  fprintf(stderr,"Requested %u at line %d of %s\n",n,line,file);
+	  fprintf(stderr,"Requested %lu at line %d of %s\n",n,line,file);
 	  abort();
 	}
     }
@@ -203,7 +203,7 @@ void DumpHeap(output)
 	}
       if (output)
 	{
-	  printf("\naddress %p request size %u allocated size %u\n",
+	  printf("\naddress %p request size %lu allocated size %lu\n",
 		 (pointer)p,m->len,m->len1);
 	  printf("  allocated from %s line %d\n",m->file,m->line);
 	  if (output > 1)
