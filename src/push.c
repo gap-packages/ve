@@ -477,7 +477,8 @@ vector baction(b,g,def,rc)	/* action of generator on basis elt
       	table[nextbe].fmgen = table[b].fmgen;
       	table[nextbe].wlen = b1+1;
       	table[nextbe].word = (gpgen *)myalloc(sizeof(gpgen)*(b1+1),false);
-      	memcpy((pointer)table[nextbe].word,
+        if (b1) /* if b1==0 then table[b].word might be NULL, an error */
+            memcpy((pointer)table[nextbe].word,
                (pointer)table[b].word,
                sizeof(gpgen)*b1);
         table[nextbe].word[b1] = g;       
