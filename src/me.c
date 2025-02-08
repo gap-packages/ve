@@ -307,9 +307,6 @@ void CleanUp() /* Attempt to deallocate everything */
 #endif
   CleanPack();
   CleanAllocs();
-  Fclear(FOne);
-  Fclear(FZero);
-  Fclear(MinusOne);
 #ifdef DEBUG
   DumpHeap(1);
 #endif
